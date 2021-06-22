@@ -1,13 +1,11 @@
-import { Button } from './components/Button'
+import { Home } from './pages/Home'
+
+import './styles/global.scss'
 
 function App() {
   return (
     <>
-      <Button>Clique aqui</Button>
-      <Button>Clique aqui</Button>
-      <Button>Clique aqui</Button>
-      <Button>Clique aqui</Button>
-      <Button>Clique aqui</Button>
+      <Home />
     </>
   );
 }

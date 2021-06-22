@@ -1,9 +1,9 @@
-type ButtonProps = {
-	children?: string;
-}
+import { ButtonHTMLAttributes } from 'react'
 
-export function Button(props: ButtonProps) {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
+
+export function Button(props) {
 	return (
-		<button>{props.children}</button>
+		<button className="button" {...props} />
 	)
 }
