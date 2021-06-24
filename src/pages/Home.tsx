@@ -1,12 +1,13 @@
 import { useHistory } from 'react-router-dom'
-import { auth, firebase } from '../services/firebase'
+import { auth, database, firebase } from '../services/firebase'
 
 import { useAuth } from '../hooks/useAuth'
+import { FormEvent, useState } from 'react';
+import { Button } from '../components/Button'
 
 import illustrationImg from '../assets/illustration.svg'
 import logoImg from '../assets/logo.svg'
 import googleIconImg from '../assets/google-icon.svg'
-import { Button } from '../components/Button'
 
 import '../styles/auth.scss'
 
@@ -15,6 +16,8 @@ export function Home() {
 	const history = useHistory();
 	const { user, signInWithGoogle } = useAuth();
 
+	const [roomCode, setRoomCode] = useState('');
+
 	async function handleCreateRoom() {
 
 		if(!user) {
@@ -22,6 +25,24 @@ export function Home() {
 		}
 
 		history.push('/rooms/new');
+	}
+
+	async function handleJoinRoom(event: FormEvent) {
+
+		event.preventDefault();
+
+		if(roomCode.trim() == '') {
+			return;
+		}
+
+		const roomRef = await database.ref(`rooms/${roomCode}`).get();
+
+		if(!roomRef.exists()) {
+			alert('A sala em questão não existe.')
+			return;
+		}
+
+		history.push(`/rooms/${roomCode}`)
 	}
 
 	return (
@@ -44,9 +65,14 @@ export function Home() {
 					</button>
 
 					<div className="separator">Ou entre em uma sala</div>
-					<form>
+					<form onSubmit={handleJoinRoom}>
 						
-						<input type="text" placeholder="Digite o código da sala" />
+						<input 
+							type="text" 
+							placeholder="Digite o código da sala"
+							onChange={event => setRoomCode(event.target.value)} 
+							value={roomCode}
+						/>
 						<Button type="submit">
 							Entrar na sala
 						</Button>
