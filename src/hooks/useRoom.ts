@@ -10,6 +10,9 @@ type QuestionType = {
 	content: string;
 	isAnswered: boolean;
 	isHighlighted: boolean;
+	likes: Record<string, {
+		authorId: string;
+	}>
 }
 
 type FirebaseQuestions = Record<string, {
@@ -41,6 +44,7 @@ export function useRoom(roomId: string) {
 					author: value.author,
 					isHighlighted: value.isHighlighted,
 					isAnswered: value.isAnswered,
+					likeCount: Object.values(value.likes)
 				}
 			});
 
