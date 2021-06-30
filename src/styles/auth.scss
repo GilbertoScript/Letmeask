@@ -77,6 +77,23 @@
 				}
 			}
 
+			footer {
+				margin-top: 16px;
+				display: flex;
+				justify-content: center;
+				gap: 5px;
+				font-size: 14px;
+				color: #a8a8b3;
+
+				a {
+					color: #a8a8b3;
+
+					&:hover {
+						color: #0a0e14;
+					}
+				}
+			}
+
 			p {
 				font-size: 14px;
 				color: #11151a;
@@ -135,6 +152,38 @@
 			height: 1px;
 			background: #a8a8b3;
 			margin-left: 16px;
+		}
+	}
+}
+
+
+// Media queries
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 768px) {
+	#page-auth {
+		height: auto;
+		flex-direction: column-reverse;
+
+		main {
+			padding: 64px 32px;
+		}
+
+		aside {
+			padding: 30px 20px;
+			text-align: center;
+
+			strong {
+				font-size: 18px;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			img {
+				display: none;
+			}
 		}
 	}
 }

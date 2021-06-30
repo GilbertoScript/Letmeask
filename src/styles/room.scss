@@ -3,6 +3,7 @@
 	header {
 		padding: 24px;
 		border-bottom: 1px solid #e2e2e2;
+		background: #0a0e14;
 
 		.content {
 			max-width: 1120px;
@@ -111,6 +112,38 @@
 
 		.question-list {
 			margin-top: 32px;
+		}
+	}
+}
+
+
+// Media queries
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 768px) {
+	header {
+		.content {
+			flex-direction: column;
+			gap: 16px;
+
+			> div {
+				flex-direction: column;
+				gap: 16px;
+			}
+		}
+	}
+
+	main {
+
+		.room-title {
+			flex-direction: column;
+			gap: 16px;
+			text-align: center;
+		}
+
+		form .form-footer {
+			flex-direction: column;
+			gap: 16px;
 		}
 	}
 }
