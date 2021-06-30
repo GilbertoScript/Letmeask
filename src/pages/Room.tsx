@@ -8,7 +8,7 @@ import { RoomCode } from '../components/RoomCode';
 import { database } from '../services/firebase';
 import { Question } from '../components/Question';
 
-import logoImg from '../assets/logo.svg'
+import logoImg from '../assets/logo-room.svg'
 
 import '../styles/room.scss'
 

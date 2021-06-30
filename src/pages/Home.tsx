@@ -82,8 +82,15 @@ export function Home() {
 							Entrar na sala
 						</Button>
 					</form>
+
+					<footer>
+						Developed by -
+						<a target="_blank" href="https://portfolio-gsj.vercel.app/">Gilberto</a>
+					</footer>
 				</div>
 			</main>
+
+				
 		</div>
 	)
 }

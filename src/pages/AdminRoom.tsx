@@ -11,7 +11,7 @@ import { Question } from '../components/Question';
 import checkImg from '../assets/check.svg'
 import answerImg from '../assets/answer.svg'
 import deleteImg from '../assets/delete.svg'
-import logoImg from '../assets/logo.svg'
+import logoImg from '../assets/logo-room.svg'
 
 import '../styles/room.scss'
 
