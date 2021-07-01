@@ -111,7 +111,6 @@ As contribuições são o que tornam a comunidade de código aberto um lugar inc
 4. Envie para o Branch (`git push origin feature / AmazingFeature`)
 5. Abra um pull request
 
-
 <!-- LICENSE -->
 ## Licença
 
