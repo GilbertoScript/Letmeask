@@ -103,7 +103,7 @@ $ yarn start
 <!-- CONTRIBUTING -->
 ## Contribuindo
 
-As contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer são ** muito apreciadas **.
+As contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer são **muito apreciadas**.
 
 1. Faça um fork do projeto
 2. Crie seu Feature Branch (`git checkout -b feature / AmazingFeature`)
