@@ -1,46 +1,118 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/GilbertoASJ/Letmeask">
+    <img 
+      src="./src/assets/logo.svg" 
+      alt="Logo Letmeask"
+      width="100"
+      height="100" 
+    >
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h2 align="center">Letmeask</h2>
 
-## Available Scripts
+  <p align="center">
+    Letmeask - Crie salas de Q&A ao-vivo, tire as dúvidas da sua audiência em tempo real.
+    <br />
+    <a href="https://github.com/GilbertoASJ/Letmeask"><strong>Explore os arquivos »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/GilbertoASJ/Letmeask">Ver Demo</a>
+    ·
+    <a href="https://github.com/GilbertoASJ/Letmeask/issues">Reportar Bug</a>
+    ·
+    <a href="https://github.com/GilbertoASJ/Letmeask/issues">Implementar Feature</a>
+  </p>
+</p>
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Lista de conteúdo</summary>
+  <ol>
+    <li>
+      <a href="#Sobre-o-projeto">Sobre o projeto</a>
+      <ul>
+        <li><a href="#Construido-com">Construido com</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Como-usar">Como usar</a>
+      <ul>
+        <li><a href="#Pré-requisitos">Pré-requisitos</a></li>
+        <li><a href="#Instalação">Instalação</a></li>
+      </ul>
+    </li>
+    <li><a href="#Contribuindo">Contribuindo</a></li>
+    <li><a href="#Licença">Licença</a></li>
+    <li><a href="#Reconhecimentos">Reconhecimentos</a></li>
+  </ol>
+</details>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
+## Sobre o projeto
 
-### `yarn test`
+<hr>
+<img src="https://user-images.githubusercontent.com/56325350/124159783-e8fd3500-da71-11eb-9bb4-9ebcb3db66eb.png" alt="Address search - login">
+<hr>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Let me ask do inglês "Deixe-me perguntar", é uma aplicação web que tem como finalidade a criação de salas Q&A, é perfeita para criadores de conteúdo interagirem com o seu público de forma rápida e simples. Esta aplicação foi construída em conjunto com a NLW 6, oferecida pela Rocketseat.
 
-### `yarn build`
+Alguns dos assuntos aprendidos e abordados durante a construção do projeto foram: React, SPA, Sass, Firebase, Real time database, etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Construido com
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As tecnologias usadas nesse projeto foram:
+* [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
+* [React](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/)
+* [SASS](https://sass-lang.com/)
+* [Typescript](https://www.typescriptlang.org/)
+* [Firebase](https://firebase.google.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- GETTING STARTED -->
+## Como usar
 
-### `yarn eject`
+Acesse o projeto on-line: <a href="https://letmeask-2fd20.web.app">Letmeask</a>, após acessar, você já pode fazer a criação de uma sala e compartilhar o link para o seu público, podendo dar destaque, marcar como destacada e também deletar a determinada pergunta.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Este é um exemplo de como você pode dar instruções sobre como configurar seu projeto localmente. Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pré-requisitos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+``` Git, Yarn, conta no Firebase ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Instalação
 
-## Learn More
+```
+# Clone este repositório
+$ git clone https://github.com/GilbertoASJ/Letmeask.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd letmeask
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Instalar as dependências
+$ yarn
+
+# Iniciar o projeto
+$ yarn start
+
+# Abra localhost:3000 no navegador e veja o projeto rodar
+```
+
+<!-- CONTRIBUTING -->
+## Contribuindo
+
+As contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Quaisquer contribuições que você fizer são ** muito apreciadas **.
+
+1. Faça um fork do projeto
+2. Crie seu Feature Branch (`git checkout -b feature / AmazingFeature`)
+3. Faça commit de suas alterações (`git commit -m 'Add some AmazingFeature'`)
+4. Envie para o Branch (`git push origin feature / AmazingFeature`)
+5. Abra um pull request
+
+
+<!-- LICENSE -->
+## Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para obter mais informações.
