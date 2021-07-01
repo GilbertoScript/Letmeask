@@ -26,8 +26,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Lista de conteúdo</summary>
